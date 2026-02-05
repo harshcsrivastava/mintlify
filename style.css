@@ -195,3 +195,37 @@ header {
     backdrop-filter: blur(20px);
   }
 }
+
+.customers {
+  background-color: var(--bg-color);
+  padding: 6rem 14.5rem;
+
+  & .logo {
+    height: 2rem;
+  }
+  & .logo-half {
+    height: 1.5rem;
+  }
+
+  & .customer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem 6rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  & .customer-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  & .anthropic-logo {
+    height: 1rem;
+  }
+}
